@@ -1,17 +1,15 @@
-floyd-warshall
-==============
+Floyd-warshall Algorithm
+============================
 
 This README file outlines the Recursive code of the Floyd Warshall algorithm written by - 
 	Nawal Saxena-sgnsaxen@liverpool.ac.uk
 
-
 Contents
------------
+-----------------
 1. Introduction
 2. Data structures used
 3. Pseudocode
-
-
+-----------------------
 
 1. Introduction
 ---------------
@@ -33,12 +31,12 @@ Given an adjacency matrix W, Here W represents the weight Materices generated
 
 FLOYD-WARSHALL( W ):
 {
-n = W.rows   Number of rows
-D(0) = W
-for k = 1 to n			When the value of k is 1, 2, 3.......n
-	for i = 1 to n		When the value of i is 1, 2, 3, .....n
+ n = W.rows   Number of rows
+ D(0) = W
+ for k = 1 to n			When the value of k is 1, 2, 3.......n     
+	for i = 1 to n		When the value of i is 1, 2, 3, .....n		
     	for j = 1 to n		When the value of j is 1, 2, 3,......n
-let D(k) = = [ d[i][j]^(k-1 ] be a new n x n matrix
+ let D(k) = = [ d[i][j]^(k-1 ] be a new n x n matrix
 	
 	d[i][j]^(k) = min(d[i][j]^(k-1), d[i][k]^(k-1) + d[k][j]^(k-1))
 
