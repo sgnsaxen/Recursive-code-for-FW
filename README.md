@@ -11,6 +11,8 @@ Contents
 2. Data structures used
 3. Pseudocode
 
+
+
 1. Introduction
 ---------------
 The Floyd Warshall algorithm is used to find shortest paths between all pairs of vertices in a graph. It is a dynamic-programming algorithm; shortest path distances are calculated bottom up, these estimates are refined until the shortest path is obtained. Positive and zero weight cycles in the graph are ignored, and negative weight cycles can be detected. 
@@ -33,10 +35,10 @@ FLOYD-WARSHALL( W ):
 {
 n = W.rows   Number of rows
 D(0) = W
-for k = 1 to n
-	for i = 1 to n
-    	for j = 1 to n
-let D(k) = = [ d[i][j]^(k) ] be a new n x n matrix
+for k = 1 to n			When the value of k is 1, 2, 3.......n
+	for i = 1 to n		When the value of i is 1, 2, 3, .....n
+    	for j = 1 to n		When the value of j is 1, 2, 3,......n
+let D(k) = = [ d[i][j]^(k-1 ] be a new n x n matrix
 	
 	d[i][j]^(k) = min(d[i][j]^(k-1), d[i][k]^(k-1) + d[k][j]^(k-1))
 
