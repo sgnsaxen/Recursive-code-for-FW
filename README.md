@@ -1,7 +1,7 @@
 floyd-warshall
 ==============
 
-This README outlines the Recursive code of the Floyd Warshall algorithm by - 
+This README file outlines the Recursive code of the Floyd Warshall algorithm written by - 
 	Nawal Saxena-sgnsaxen@liverpool.ac.uk
 
 
