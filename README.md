@@ -9,6 +9,7 @@ Contents
 1. Introduction
 2. Data structures used
 3. Pseudocode
+4. PEP-8 Explanation
 -----------------------
 
 1. Introduction
@@ -29,16 +30,23 @@ Required Recursive code can be written as
 
 Given an adjacency matrix W, Here W represents the weight Materices generated
 
-FLOYD-WARSHALL( W ):
+# FLOYD-WARSHALL( W ):
 {
- n = W.rows   Number of rows
- D(0) = W
- for k = 1 to n			When the value of k is 1, 2, 3.......n     
-	for i = 1 to n		When the value of i is 1, 2, 3, .....n		
-    	for j = 1 to n		When the value of j is 1, 2, 3,......n
- let D(k) = = [ d[i][j]^(k-1 ] be a new n x n matrix
+   n = W.rows   Number of rows
+   D(0) = W
+   for k = 1 to n			When the value of k is 1, 2, 3.......n     
+	for i = 1 to n			When the value of i is 1, 2, 3, .....n		
+    	for j = 1 to n			When the value of j is 1, 2, 3,......n
+     	let D(k) = = [ d[i][j]^(k-1 ] be a new n x n matrix
 	
 	d[i][j]^(k) = min(d[i][j]^(k-1), d[i][k]^(k-1) + d[k][j]^(k-1))
 
 	return D(n)
 }
+4.	PEP Text
+	Uses 4 spaces per indentation level.
+	Block comments starts with # with single space.
+	Uses in line comments and short text sparingly.
+	Method definitions inside class are surrounded by a single blank line
+	Trailing commas, add and close parenthesis/bracket on the next line, were used when making set of one element
+	
