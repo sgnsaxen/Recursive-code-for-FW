@@ -47,9 +47,10 @@ Given an adjacency matrix W, Here W represents the weight Materices generated
 
 
 4.	PEP Text
-	Uses 4 spaces per indentation level.
-	Block comments starts with # with single space.
-	Uses in line comments and short text sparingly.
-	Method definitions inside class are surrounded by a single blank line
-	Trailing commas, add and close parenthesis/bracket on the next line, were used when making set of one element
+---------------------
+1	Uses 4 spaces per indentation level.
+2	Block comments starts with # with single space.
+3	Uses in line comments and short text sparingly.
+4	Method definitions inside class are surrounded by a single blank line
+5	Trailing commas, add and close parenthesis/bracket on the next line, were used when making set of one element
 	
